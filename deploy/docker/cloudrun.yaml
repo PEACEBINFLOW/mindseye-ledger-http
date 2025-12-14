@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: mindseye-ledger-http
+spec:
+  template:
+    spec:
+      containers:
+        - image: gcr.io/YOUR_PROJECT/mindseye-ledger-http:latest
+          env:
+            - name: PORT
+              value: "8081"
+          ports:
+            - containerPort: 8081
