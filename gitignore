@@ -1,0 +1,10 @@
+build/
+dist/
+out/
+cmake-build-*/
+
+.vscode/
+.idea/
+.DS_Store
+
+ledger.data
